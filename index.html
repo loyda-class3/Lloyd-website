@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Playpen Sans', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1548506923-99f6e89852fe?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(240, 240, 240, 0.7);
+            width: 25vw;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            width: 85%;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .login-btn:hover {
+            transition: 0.2s;
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="/gwapoko" id="form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <input type="submit" class="login-btn" id="button" value="Login">
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector('#form');
+        const myUsername = 'loberanes';
+        const myPassword = '12345';
+        const username = document.querySelector('#username');
+        const password = document.querySelector('#password');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            if (username.value !== myUsername || password.value !== myPassword) {
+                alert('Incorrect Password!');
+                form.reset();
+            } else {
+                form.reset();
+                window.location.href = 'homepage.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

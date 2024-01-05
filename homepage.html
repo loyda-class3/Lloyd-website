@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+
+    body {
+        font-family: 'Playpen Sans', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-image: url("https://images.unsplash.com/photo-1549119246-cf57ef8a17b2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        width: 99%;
+        background-size: cover;
+        height: auto;
+        background-repeat: no-repeat;
+        justify-content: center;
+        background-color: brown;
+    }
+
+    .flex-container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .basic-infoh2 {
+        text-align: center;
+        background-image: url("../picture1.jpg");
+    }
+
+
+    .basic-info {
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.7);
+        height: auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px 2px black;
+    }
+
+    nav {
+        margin: 20px;
+        display: flex;
+        justify-self: flex-start;
+        flex-direction: column;
+    }
+
+    .btn-fb {
+        text-align: center;
+        display: inline-block;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        width: 150px;
+        text-decoration: none;
+        color: black;
+        margin: 10px;
+        box-shadow: 0 0 7px 0.5px black;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+
+    .btn-fb:hover {
+        transition: all 0.3s;
+        transform: translateX(5px);
+        box-shadow: -3px 0 7px 0.5px black;
+    }
+
+    .btn-fb:active {
+        background-color: rgba(255, 255, 255, 0);
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <nav>
+            <a class="btn-fb" href="index.html">Login</a>
+            <a class="btn-fb" href="gallery.html" target="_blank">Gallery</a>
+            <a class="btn-fb" href="https://www.facebook.com/jldl.dagurayan" target="_blank">My Facebook</a>
+            <a class="btn-fb" href="https://www.instagram.com/itsmeloyda/" target="_blank">My Instagram</a>
+            <a class="btn-fb" href="https://www.tiktok.com/@jeel.com" target="_blank">My Tiktok</a>
+        </nav>
+        <div class="basic-info">
+            <h2>About me?</h2>
+            <h3>Name: <i> <u>John Lloyd Loberanes</u></i></h3>
+            <h3>My Email:<i><u>johnlloydloberanes18@gmail.com</u></i></h3>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
